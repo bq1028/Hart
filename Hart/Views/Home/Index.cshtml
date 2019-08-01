@@ -2,7 +2,66 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<partial name="_Carousel.cshtml" />
+
+
+
+<style>
+       
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    a {
+        padding:0px;
+        margin:0px;
+    }
+</style>
+
+
+<div class="container">
+
+    <div class="row welcome-message">
+        <h1>Get your dream safari holiday!</h1>
+    </div>
+        
+    <div class="row package-name">
+        <h3>Maasai Mara Safaris</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-3 remove-col-paddings">
+            <a asp-controller="PackageMaasaiMara" asp-action="ThreeDaySafari">
+                <img src="~/images/home/maasai_mara/lions.jpg" width="360" height="300" />
+                <br />
+                3 Days Safari - 
+            </a>
+            <a asp-controller="InquireNow" asp-action="Index">               
+                <strong>(INQUIRE NOW)</strong>
+            </a>
+        </div>
+        <div class="col-md-4 mb-3 remove-col-paddings">
+            <a asp-controller="PackageMaasaiMara" asp-action="FourDaySafari">
+                <img src="~/images/home/maasai_mara/gazelles_zebras.jpg" width="360" height="300" />
+                <br />
+                4 Days Safari -
+            </a>
+            <a asp-controller="InquireNow" asp-action="Index">
+                <strong>(INQUIRE NOW)</strong>
+            </a>
+        </div>
+        <div class="col-md-4 mb-3 remove-col-paddings">
+            <a asp-controller="PackageMaasaiMara" asp-action="FiveDaySafari">
+                <img src="~/images/home/maasai_mara/leopard.jpg" width="360" height="300" />
+                <br />
+                5 Days Safari - 
+            </a>
+            <a asp-controller="InquireNow" asp-action="Index">
+                <strong>(INQUIRE NOW)</strong>
+            </a>
+        </div>
+    </div>
 </div>

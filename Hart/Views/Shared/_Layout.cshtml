@@ -31,6 +31,32 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+                        @*<li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Packages</a>        </li>*@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Packages
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">                                
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageMaasaiMara" asp-action="Index">Maasai Mara Safaris</a>                                
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageAmboseli" asp-action="Index">Amboseli Safaris</a>                                
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageMountainHiking" asp-action="Index">Mountain Hiking</a>                                
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageHoneymoon" asp-action="Index">Honeymoon Holidays</a>                                
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageBeach" asp-action="Index">Beach Holidays</a>                                
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageCampingAccomm" asp-action="Index">Camping Accommodation</a>                                
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageLodgeAccomm" asp-action="Index">Lodge Accommodation</a>                                
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageDayTrips" asp-action="Index">Day Trips</a>                         
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Faq" asp-action="Index">FAQ</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
@@ -39,7 +65,8 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <!-- Container class has been renamed to accommodate slider -->
+    <div class="content_container">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @RenderBody()
@@ -48,7 +75,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2019 - Hart - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            Copyright &copy; H-Art of Africa Safaris Limited 2019 <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
 
@@ -75,3 +102,9 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
+
+
+
+
+

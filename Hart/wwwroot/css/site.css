@@ -16,6 +16,10 @@ html {
   html {
     font-size: 16px;
   }
+
+    .column {
+        margin-top: 10px;
+    }
 }
 
 .border-top {
@@ -53,4 +57,38 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
+}
+
+.carousel-bottom-spacing {    
+    margin-bottom: 50px;
+}
+
+
+/* Home page images */
+.welcome-message {
+    margin-bottom: 50px;
+}
+
+.package-name {
+    margin-bottom: 20px;
+}
+
+.remove-col-paddings {
+    padding-left: 0px;
+    padding-left: 0px;
+}
+
+.remove-row-margins {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+/* Contact us */
+.contact-heading {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

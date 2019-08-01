@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Hart.Models;
+using Hart.Services;
 
 namespace Hart
 {
@@ -33,6 +36,14 @@ namespace Hart
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
+
+            services.AddSingleton<IEmailSender, EmailSender>();
+            services.AddScoped<IContactFormData, ContactFormData>();
+
+            services.AddDbContext<HartContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("HartContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
