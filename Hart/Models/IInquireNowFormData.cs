@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 
 namespace Hart.Models
 {
-    public class InquireNow
+    public interface IInquireNowFormData
     {
+        InquireNowForm Add(InquireNowForm inquireNowForm);
+        void Commit();
     }
 }

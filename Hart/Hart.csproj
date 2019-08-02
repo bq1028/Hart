@@ -17,6 +17,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\images\carousel\" />
     <Folder Include="wwwroot\images\home\maasai_mara\" />
+    <Folder Include="wwwroot\images\maasai-mara-landing\" />
   </ItemGroup>
 
 </Project>

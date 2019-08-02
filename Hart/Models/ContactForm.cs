@@ -12,6 +12,7 @@ namespace Hart.Models
         public int ContactId { get; set; }
 
         [Required]
+        [Display(Name = "Full Name")]
         public string FullName { get; set; }
 
         [Required]

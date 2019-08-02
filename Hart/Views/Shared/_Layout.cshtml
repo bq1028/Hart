@@ -13,15 +13,17 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
               crossorigin="anonymous"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
     </environment>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+            @*<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">*@
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Hart</a>
+                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">Hart</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,48 +31,61 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         @*<li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Packages</a>        </li>*@
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Packages</a>        </li>*@
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <a class="nav-link text-white dropdown-toggle" href="" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 Packages
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right">                                
-                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageMaasaiMara" asp-action="Index">Maasai Mara Safaris</a>                                
-                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageAmboseli" asp-action="Index">Amboseli Safaris</a>                                
-                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageMountainHiking" asp-action="Index">Mountain Hiking</a>                                
-                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageHoneymoon" asp-action="Index">Honeymoon Holidays</a>                                
-                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageBeach" asp-action="Index">Beach Holidays</a>                                
-                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageCampingAccomm" asp-action="Index">Camping Accommodation</a>                                
-                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageLodgeAccomm" asp-action="Index">Lodge Accommodation</a>                                
-                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageDayTrips" asp-action="Index">Day Trips</a>                         
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageMaasaiMara" asp-action="Index">Maasai Mara Safaris</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageAmboseli" asp-action="Index">Amboseli Safaris</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageMountainHiking" asp-action="Index">Mountain Hiking</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageHoneymoon" asp-action="Index">Honeymoon Holidays</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageBeach" asp-action="Index">Beach Holidays</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageCampingAccomm" asp-action="Index">Camping Accommodation</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageLodgeAccomm" asp-action="Index">Lodge Accommodation</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="PackageDayTrips" asp-action="Index">Day Trips</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="About" asp-action="Index">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Contact" asp-action="Index">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Faq" asp-action="Index">FAQ</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Faq" asp-action="Index">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="InquireNow" asp-action="Index">INQUIRE NOW</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Todo: Add contact to Nav bar -->
+    @*<div class="container">
+            <i class="fa fa-envelope" style="font-size:20px; float: left;">
+                info@h-artofafricasafaris.com
+            </i>
+            <i class="fa fa-phone" style="font-size:20px; float: right;">
+                +254 208 000 243
+            </i>
+        </div>*@
     <!-- Container class has been renamed to accommodate slider -->
     <div class="content_container">
-        <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
+        @*<partial name="_CookieConsentPartial" />*@
+        @*<main role="main" class="pb-3">*@
             @RenderBody()
-        </main>
+        @*</main>*@
     </div>
 
     <footer class="border-top footer text-muted">
@@ -96,7 +111,7 @@
                 crossorigin="anonymous"
                 integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
         </script>
-    </environment>
+    </environment>   
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)

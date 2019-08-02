@@ -41,6 +41,7 @@ namespace Hart
 
             services.AddSingleton<IEmailSender, EmailSender>();
             services.AddScoped<IContactFormData, ContactFormData>();
+            services.AddScoped<IInquireNowFormData, InquireNowFormData>();
 
             services.AddDbContext<HartContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("HartContext")));

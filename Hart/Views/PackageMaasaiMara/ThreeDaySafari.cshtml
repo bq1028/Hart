@@ -3,7 +3,122 @@
     ViewData["Title"] = "ThreeDaySafari";
 }
 
-<div class="container">
-    <h1>ThreeDaySafari</h1>
+<div id="contact-page-header" class="content-heading container">
+    <h3>Highlights of 3 Days Maasai Mara Safari</h3>
 </div>
 
+<div class="container">    
+        <img src="~/images/maasai-mara-package/marapackageimage.jpg" style="width: 100%;" />   
+</div>
+
+<div class="container text-center package-description">
+    Want to have the experience of a life-time and enjoy the Majesty of African Safari, Climb Mount Kenya or lay down in the white sands of Mombasa?
+    Just drop us a message with what you have in mind. We will strive get back to you ASAP.
+</div>
+
+<div class="container">
+    <div class="package-inquire-now-button text-center">
+        <a asp-controller="InquireNow" asp-action="Index">
+            <input type="button" class="btn btn-success text-uppercase" value="Request a quote for this package" style="" />
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <ul id="tablist" class="nav nav-tabs nav-tabs-responsive">
+        <li class="active">
+            <a href="#tab1" data-toggle="tab">
+                <span class="text wide">Photos</span>
+            </a>
+        </li>
+        <li class="next">
+            <a href="#tab2" data-toggle="tab">
+                <span class="text">Detailed Itinerary</span>
+            </a>
+        </li>
+        @*<li>
+            <a href="#tab3" data-toggle="tab">
+                <span class="text">Price</span>
+            </a>
+        </li>*@
+        <li>
+            <a href="#tab4" data-toggle="tab">
+                <span class="text">Inquire Now</span>
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content tab-container">
+        <div class="tab-pane active" id="tab1">
+            <div class="tab-pane active" id="tab1">
+                <div class="row remove-row-margins tab-content-padding">
+                    <div class="col-md-4 mb-3 remove-col-paddings">
+                        <img src="~/images/home/maasai_mara/lions.jpg" width="340" height="280" />
+                    </div>
+                    <div class="col-md-4 mb-3 remove-col-paddings">
+                        <img src="~/images/home/maasai_mara/gazelles_zebras.jpg" width="340" height="280" />
+                    </div>
+                    <div class="col-md-4 mb-3 remove-col-paddings">
+                        <img src="~/images/home/maasai_mara/leopard.jpg" width="340" height="280" />
+                    </div>
+                </div>
+                <div class="row remove-row-margins tab-content-padding">
+                    <div class="col-md-4 mb-3 remove-col-paddings">
+                        <img src="~/images/home/maasai_mara/lions.jpg" width="340" height="280" />
+                    </div>
+                    <div class="col-md-4 mb-3 remove-col-paddings">
+                        <img src="~/images/home/maasai_mara/gazelles_zebras.jpg" width="340" height="280" />
+                    </div>
+                    <div class="col-md-4 mb-3 remove-col-paddings">
+                        <img src="~/images/home/maasai_mara/leopard.jpg" width="340" height="280" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab2">
+            <div class="row remove-row-margins">
+                <div class="col-md-12 mb-3 tab-content-padding">
+                    <div class="tab-itinerary-header">
+                        <span class="text-uppercase">Place Visited</span>
+                        <p>The Hemmingway trail, Maasai Mara</p>
+                    </div>
+                    <div class="tab-itinerary-header">
+                        <span class="text-uppercase">Detailed Itinerary</span>
+                        <h6>Day 1: Nairobi – Maasai Mara</h6>
+                        <p>0900hrs Depart from our Nairobi office for a journey south along the flour of the rift valley. Lunch break at Narok and then climb western wall entering the Hemmingway’s county ‘Serengeti plains. Arrive late afternoon in the Masai Mara game reserve, game drive enroute. Dinner and overnight at the campsite/lodge.</p>
+                    </div>
+                    <div class="tab-itinerary-header">
+                        <h6>Day 2: Maasai Mara</h6>
+                        <p>Whole day in Mara. Morning and afternoon game drives. Meals and overnight at the campsite lodge.</p>
+                    </div>
+                    <div class="tab-itinerary-header">
+                        <h6>Day 3: Maasai Mara – Nairobi</h6>
+                        <p>After breakfast, depart for Nairobi enjoy picnic lunch enroute and arrive in Nairobi evening 1800hrs.</p>
+                    </div>
+
+                </div>           
+            </div>
+        </div>
+        @*<div class="tab-pane" id="tab3">
+            package price
+        </div>*@
+        <div class="tab-pane" id="tab4">
+            <div class="tab-pane" id="tab2">
+                <div class="row remove-row-margins">
+                    <div class="col-md-12 mb-3 tab-content-padding">
+                        <div class="tab-itinerary-header">
+                            <span class="text-uppercase">MAKING AN INQUIRY</span>
+                            <p>Most tours are customized for private travel according to your preferences and dates. Click below to tell us what you're looking for:</p>
+                        </div>
+                        <!--Todo: Add css to replace heigh below-->
+                        <div class="tab-itinerary-header" style="height:500px;">
+                            <span class="text-uppercase"></span>
+                            <a asp-controller="InquireNow" asp-action="Index">
+                                <input type="button" class="btn btn-success text-uppercase" value="Request a quote for this package" style="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
